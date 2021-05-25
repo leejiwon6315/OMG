@@ -2,53 +2,55 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>OMG project</title>
     <link rel="stylesheet" href="./styles/style-main.css" />
   </head>
   <body>
     <div class="background">
       <section class="login-wrapper">
-        <form class="input-box">
+        <div class="input-box">
           <div class="input-box-header">
             <img alt="logo" src="./img/logo.svg" />
             <h1>OMG</h1>
           </div>
-          <h4>안녕하세요? 이름과 관심분야를 입력해주세요!</h4>
+          <h4>안녕하세요? 이름과 관심분야를 등록해주세요!</h4>
 
           <input
             type="text"
             class="input-name"
+            id="input-name"
             placeholder="이름을 입력해주세요."
           />
           <div class="survey-wrapper">
-            <div>디자인</div>
-            <div>게임</div>
-            <div>아이디어</div>
-            <div>유튜브</div>
-            <div>일러스트</div>
-            <div>기획</div>
-            <div>기술</div>
-            <div>미디어</div>
-            <div>아트</div>
-            <div>코딩</div>
-            <div>방법론</div>
-            <div>예능</div>
-            <div>계산적</div>
-            <div>심미적</div>
-            <div>계획적</div>
-            <div>촬영</div>
-            <div>예술</div>
-            <div>앱/웹</div>
-            <div>문서정리</div>
-            <div>방송</div>
-            <div>개발</div>
-            <div>포토샵/일러스트</div>
-            <div>카메라</div>
-            <div>창의력</div>
+            <div id="designPart" class="survey-button">디자인</div>
+            <div id="devPart" class="survey-button">게임</div>
+            <div id="managePart" class="survey-button">아이디어</div>
+            <div id="mediaPart" class="survey-button">유튜브</div>
+            <div id="designPart" class="survey-button">일러스트</div>
+            <div id="managePart" class="survey-button">기획</div>
+            <div id="devPart" class="survey-button">기술</div>
+            <div id="mediaPart" class="survey-button">미디어</div>
+            <div id="designPart" class="survey-button">아트</div>
+            <div id="devPart" class="survey-button">코딩</div>
+            <div id="managePart" class="survey-button">방법론</div>
+            <div id="mediaPart" class="survey-button">예능</div>
+            <div id="devPart" class="survey-button">계산적</div>
+            <div id="designPart" class="survey-button">심미적</div>
+            <div id="devPart" class="survey-button">계획적</div>
+            <div id="mediaPart" class="survey-button">촬영</div>
+            <div id="designPart" class="survey-button">예술</div>
+            <div id="devPart" class="survey-button">앱/웹</div>
+            <div id="managePart" class="survey-button">문서정리</div>
+            <div id="mediaPart" class="survey-button">방송</div>
+            <div id="devPart" class="survey-button">개발</div>
+            <div id="designPart" class="survey-button">포토샵/일러스트</div>
+            <div id="mediaPart" class="survey-button">카메라</div>
+            <div id="designPart" class="survey-button">창의력</div>
           </div>
 
-          <button type="button" class="login-btn">Login</button>
-        </form>
+          <button type="button" class="login-btn" id="login-btn">Login</button>
+        </div>
       </section>
       <footer>
         <span>Team 2. 공민식 문희원 이지원 윤수진</span>
@@ -62,6 +64,10 @@
         <img src="./img/login/boy2.png" class="bg-img" />
         <img src="./img/login/girl2.png" class="bg-img" />
       </div>
+
+      <img src="./img/login/login_object.svg" class="bg-object" />
     </div>
+
+    <script defer type="text/javascript" src="./js/login.js"></script>
   </body>
 </html>
