@@ -4,8 +4,8 @@ const inputNameButton = document.getElementById("input-name");
 
 let userName = "";
 let result = "";
-let majorPoint = [0, 0, 0, 0];
-// 배열순서 : 미디어, 디자인, 개발 기획
+let majorPoint = [0, 0, 0, 0, 1];
+// 배열순서 : 미디어, 디자인, 개발, 기획, 기본
 
 const calMajor = (event) => {
   if (event.target.id === "mediaPart") {
@@ -56,7 +56,7 @@ const comparePoint = () => {
   const result = Math.max(...majorPoint);
   let j;
 
-  for (j = 0; j < 4; j++) {
+  for (j = 0; j < 5; j++) {
     if (result === majorPoint[j]) {
       break;
     }
@@ -65,8 +65,8 @@ const comparePoint = () => {
   if (j === 0) return "PD님";
   else if (j === 1) return "디자이너님";
   else if (j === 2) return "개발자님";
-  else if (j === 3) return "기획자남";
-  else return "글로벌미디어 학우님";
+  else if (j === 3) return "기획자님";
+  else return "학우님";
 };
 // 최대 포인트 계산 및 해당 포인트 직무 반환
 

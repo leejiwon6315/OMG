@@ -7,7 +7,7 @@ let userMajorValue = "";
 const getUserInfo = () => {
   userNameValue = localStorage.getItem("omg-name");
   userMajorValue = localStorage.getItem("omg-major");
-  userNameInNav.innerText = `${userNameValue} ${userMajorValue} 안녕하세요!`;
+  userNameInNav.innerText = `${userNameValue} ${userMajorValue} \n 안녕하세요!`;
 };
 
 const logout = () => {

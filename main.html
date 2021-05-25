@@ -4,10 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>OMG project</title>
+    <link rel="stylesheet" href="./styles/style-default.css" />
+    <link rel="stylesheet" href="./styles/style-main.css" />
   </head>
   <body>
-    <div id="nav-user-name"></div>
-    <button id="logout-button">로그아웃</button>
+    <header>
+      <nav>
+        <a href="#" class="logo-wrapper">
+          <img src="./img/logo.svg" alt="logo" />
+          <h1>OMG</h1>
+        </a>
+
+        <ul>
+          <li><a href="#" class="nav-btn">개발자</a></li>
+          <li><a href="#" class="nav-btn">디자이너</a></li>
+          <li><a href="#" class="nav-btn">기획자</a></li>
+          <li><a href="#" class="nav-btn">PD</a></li>
+        </ul>
+        <button id="logout-button">로그아웃</button>
+      </nav>
+    </header>
+
+    <aside>
+      <div class="aside-container">
+        <div class="user-info-wrapper">
+          <div class="user-icon"></div>
+          <div id="nav-user-name"></div>
+        </div>
+        <ul>
+          <li>
+            <a href="#" class="aside-btn">
+              <div class="menu-icon"></div>
+              <p>커리큘럼</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="aside-btn">
+              <div class="menu-icon"></div>
+              <p>동아리/소모임</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="aside-btn">
+              <div class="menu-icon"></div>
+              <p>참고 사이트</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="aside-btn">
+              <div class="menu-icon"></div>
+              <p>전자기기</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="main-section"></section>
     <script defer type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
