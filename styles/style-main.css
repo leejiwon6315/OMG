@@ -152,3 +152,16 @@ aside > .aside-container > ul > li > a > .menu-icon {
   background-color: #bfbee4;
   border-radius: 50%;
 }
+
+.main-section {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 100px;
+}
+
+.main-section > iframe {
+  margin-left: 250px;
+  width: 80vw;
+  height: 82vh;
+}

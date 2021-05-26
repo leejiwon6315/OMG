@@ -1,0 +1,66 @@
+.site-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.site-section > .site-button-container > button {
+  background-color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 180px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: none;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 1px 2px rgba(37, 37, 37, 0.363);
+}
+
+.site-section > .site-button-container > button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(37, 37, 37, 0.205);
+}
+
+.site-section > .site-button-container > button:active {
+  box-shadow: none;
+  transform: scale(0.99);
+  transform: translate(0, 0px);
+}
+
+.site-section > .site-button-container > button > div {
+  opacity: 0.5;
+  height: 105px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.site-section > .site-button-container > button > div:hover {
+  opacity: 1;
+}
+
+/*버튼 1_공부용*/
+.site-section > .site-button-container > .site-button-item1 > div {
+  background: url("../../../img/button/btnimg_site_study.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: 60%;
+}
+
+/*버튼 2_자료용*/
+.site-section > .site-button-container > .site-button-item2 > div {
+  background: url("../../../img/button/btnimg_site_reference.svg");
+  background-repeat: no-repeat;
+  background-position: 52% 10%;
+  background-size: 60%;
+}
+
+.site-triangle {
+  position: absolute;
+  top: 415px;
+  border-right: 40px solid white;
+  border-left: 40px solid none;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
