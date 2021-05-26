@@ -55,12 +55,3 @@
   background-position: 52% 10%;
   background-size: 60%;
 }
-
-.site-triangle {
-  position: absolute;
-  top: 415px;
-  border-right: 40px solid white;
-  border-left: 40px solid none;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-}
