@@ -6,6 +6,7 @@
     "Fira Sans", "Droid Sans", sans-serif, "Helvetica Neue";
 
   overflow: auto;
+  -webkit-overflow-style: none;
   -ms-overflow-style: none;
 }
 *::-webkit-scrollbar {
