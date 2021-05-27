@@ -5,6 +5,7 @@
     -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", sans-serif, "Helvetica Neue";
 
+  overflow: auto;
   -ms-overflow-style: none;
 }
 *::-webkit-scrollbar {

@@ -1,4 +1,6 @@
 const userNameInNav = document.getElementById("nav-user-name");
+const logo = document.getElementById("logo");
+const homeButton = document.getElementById("home-button");
 const logoutButton = document.getElementById("logout-button");
 const devMenu = document.getElementById("dev-menu");
 const designMenu = document.getElementById("design-menu");
@@ -16,6 +18,22 @@ const changeIframe = (url) => {
 
 const changeProfile = (url) => {
   document.getElementById("user-profile").src = url;
+};
+
+const goHome = () => {
+  visibleMajor = userMajorValue;
+
+  if (userMajorValue === "개발자님") {
+    changeIframe("./page/club/clubFrameDev.html");
+  } else if (userMajorValue === "디자이너님") {
+    changeIframe("./page/club/clubFrameDesigner.html");
+  } else if (userMajorValue === "기획자님") {
+    changeIframe("./page/club/clubFrameManager.html");
+  } else if (userMajorValue === "PD님") {
+    changeIframe("./page/club/clubFramePd.html");
+  } else {
+    changeIframe("./page/club/clubFrameNormal.html");
+  }
 };
 
 const getUserInfo = () => {
@@ -39,7 +57,7 @@ const getUserInfo = () => {
     changeProfile("./img/profile/profile_broadcast.svg");
   } else {
     changeIframe("./page/club/clubFrameNormal.html");
-    changeProfile("./img/logo.svg");
+    changeProfile("./img/profile/profile_student.svg");
   }
 };
 
@@ -117,6 +135,8 @@ const logout = () => {
   window.location.href = "./index.html";
 };
 
+logo.addEventListener("click", goHome);
+homeButton.addEventListener("click", goHome);
 logoutButton.addEventListener("click", logout);
 devMenu.addEventListener("click", onClickMenuItem);
 designMenu.addEventListener("click", onClickMenuItem);
