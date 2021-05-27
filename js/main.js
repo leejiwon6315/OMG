@@ -15,10 +15,12 @@ let visibleMajor = "";
 const changeIframe = (url) => {
   document.getElementById("major-iframe").src = url;
 };
+// iframe 주소 변경 함수
 
 const changeProfile = (url) => {
   document.getElementById("user-profile").src = url;
 };
+// 프로필 이미지 변경 함수
 
 const goHome = () => {
   visibleMajor = userMajorValue;
@@ -35,6 +37,7 @@ const goHome = () => {
     changeIframe("./page/club/clubFrameNormal.html");
   }
 };
+// 홈 버튼 : 진로별 홈 화면이 다름
 
 const getUserInfo = () => {
   userNameValue = localStorage.getItem("omg-name");
@@ -60,6 +63,8 @@ const getUserInfo = () => {
     changeProfile("./img/profile/profile_student.svg");
   }
 };
+// 유저 정보를 가져와 정보에 맞게 이름과 직무, 프로필을 보여줌
+// 홈 화면을 진로에 맞게 설정
 
 const onClickMenuItem = (e) => {
   if (e.target.innerText === "개발자") {
@@ -76,6 +81,7 @@ const onClickMenuItem = (e) => {
     changeIframe("./page/club/clubFramePd.html");
   }
 };
+// 진로별 메뉴
 
 const changeCategory = (e) => {
   if (e.target.innerText == "동아리/소모임") {
@@ -128,12 +134,14 @@ const changeCategory = (e) => {
     }
   }
 };
+// 진로별 카테고리 종류 구분
 
 const logout = () => {
   localStorage.removeItem("omg-name");
   localStorage.removeItem("omg-major");
   window.location.href = "./index.html";
 };
+// 로그아웃
 
 logo.addEventListener("click", goHome);
 homeButton.addEventListener("click", goHome);
