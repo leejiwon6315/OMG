@@ -7,46 +7,46 @@ let result = "";
 let majorPoint = [0, 0, 0, 0, 1];
 // 배열순서 : 미디어, 디자인, 개발, 기획, 기본
 
-const calMajor = (event) => {
-  if (event.target.id === "mediaPart") {
-    if (event.target.style.color === "white") {
+const calMajor = (e) => {
+  if (e.target.id === "mediaPart") {
+    if (e.target.style.color === "white") {
       majorPoint[0] -= 1;
-      event.target.style.backgroundColor = "rgb(233, 233, 233)";
-      event.target.style.color = "black";
+      e.target.style.backgroundColor = "rgb(233, 233, 233)";
+      e.target.style.color = "black";
     } else {
       majorPoint[0] += 1;
-      event.target.style.backgroundColor = "#6769e9";
-      event.target.style.color = "white";
+      e.target.style.backgroundColor = "#6769e9";
+      e.target.style.color = "white";
     }
-  } else if (event.target.id === "designPart") {
-    if (event.target.style.color === "white") {
+  } else if (e.target.id === "designPart") {
+    if (e.target.style.color === "white") {
       majorPoint[1] -= 1;
-      event.target.style.backgroundColor = "rgb(233, 233, 233)";
-      event.target.style.color = "black";
+      e.target.style.backgroundColor = "rgb(233, 233, 233)";
+      e.target.style.color = "black";
     } else {
       majorPoint[1] += 1;
-      event.target.style.backgroundColor = "#6769e9";
-      event.target.style.color = "white";
+      e.target.style.backgroundColor = "#6769e9";
+      e.target.style.color = "white";
     }
-  } else if (event.target.id === "devPart") {
-    if (event.target.style.color === "white") {
+  } else if (e.target.id === "devPart") {
+    if (e.target.style.color === "white") {
       majorPoint[2] -= 1;
-      event.target.style.backgroundColor = "rgb(233, 233, 233)";
-      event.target.style.color = "black";
+      e.target.style.backgroundColor = "rgb(233, 233, 233)";
+      e.target.style.color = "black";
     } else {
       majorPoint[2] += 1;
-      event.target.style.backgroundColor = "#6769e9";
-      event.target.style.color = "white";
+      e.target.style.backgroundColor = "#6769e9";
+      e.target.style.color = "white";
     }
-  } else if (event.target.id === "managePart") {
-    if (event.target.style.color === "white") {
+  } else if (e.target.id === "managePart") {
+    if (e.target.style.color === "white") {
       majorPoint[3] -= 1;
-      event.target.style.backgroundColor = "rgb(233, 233, 233)";
-      event.target.style.color = "black";
+      e.target.style.backgroundColor = "rgb(233, 233, 233)";
+      e.target.style.color = "black";
     } else {
       majorPoint[3] += 1;
-      event.target.style.backgroundColor = "#6769e9";
-      event.target.style.color = "white";
+      e.target.style.backgroundColor = "#6769e9";
+      e.target.style.color = "white";
     }
   }
 };
@@ -70,8 +70,8 @@ const comparePoint = () => {
 };
 // 최대 포인트 계산 및 해당 포인트 직무 반환
 
-const setUserName = (event) => {
-  userName = event.target.value;
+const setUserName = (e) => {
+  userName = e.target.value;
 };
 // 유저 이름 저장
 

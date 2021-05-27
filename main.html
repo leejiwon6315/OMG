@@ -16,10 +16,10 @@
         </a>
 
         <ul>
-          <li><a href="#" class="nav-btn">개발자</a></li>
-          <li><a href="#" class="nav-btn">디자이너</a></li>
-          <li><a href="#" class="nav-btn">기획자</a></li>
-          <li><a href="#" class="nav-btn">PD</a></li>
+          <li><a href="#" class="nav-btn" id="dev-menu">개발자</a></li>
+          <li><a href="#" class="nav-btn" id="design-menu">디자이너</a></li>
+          <li><a href="#" class="nav-btn" id="manager-menu">기획자</a></li>
+          <li><a href="#" class="nav-btn" id="pd-menu">PD</a></li>
         </ul>
         <button id="logout-button">로그아웃</button>
       </nav>
@@ -33,41 +33,25 @@
         </div>
         <ul>
           <li>
-            <a
-              href="./page/grade/gradeFrame.html"
-              class="aside-btn"
-              target="iframe-section"
-            >
-              <div class="menu-icon"></div>
-              <p>커리큘럼</p>
-            </a>
-          </li>
-          <li>
-            <a
-              href="./page/club/clubFrame.html"
-              class="aside-btn"
-              target="iframe-section"
-            >
+            <a class="aside-btn" target="iframe-section">
               <div class="menu-icon"></div>
               <p>동아리/소모임</p>
             </a>
           </li>
           <li>
-            <a
-              href="./page/site/siteFrame.html"
-              class="aside-btn"
-              target="iframe-section"
-            >
+            <a class="aside-btn" target="iframe-section">
               <div class="menu-icon"></div>
               <p>참고 사이트</p>
             </a>
           </li>
           <li>
-            <a
-              href="./page/machine/machineFrame.html"
-              class="aside-btn"
-              target="iframe-section"
-            >
+            <a class="aside-btn" target="iframe-section">
+              <div class="menu-icon"></div>
+              <p>커리큘럼</p>
+            </a>
+          </li>
+          <li>
+            <a class="aside-btn" target="iframe-section">
               <div class="menu-icon"></div>
               <p>전자기기</p>
             </a>
@@ -78,10 +62,10 @@
 
     <section class="main-section">
       <iframe
-        src="./page/grade/gradeFrame.html"
         name="iframe-section"
         title="iframe-section"
         frameborder="0"
+        id="major-iframe"
       ></iframe>
     </section>
     <script defer type="text/javascript" src="./js/main.js"></script>
