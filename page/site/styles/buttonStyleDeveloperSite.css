@@ -8,6 +8,10 @@
   margin: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .site-section > .site-button-container button {
   background-color: white;
   text-decoration: none;

@@ -8,6 +8,10 @@
   margin: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .device-section > .device-button-container button {
   background-color: white;
   text-decoration: none;

@@ -112,6 +112,14 @@ aside > .aside-container > .user-info-wrapper > .user-icon {
   height: 150px;
   border-radius: 50%;
   border: 10px solid #615eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside > .aside-container > .user-info-wrapper > .user-icon > img {
+  width: 120px;
+  height: 120px;
 }
 
 aside > .aside-container > .user-info-wrapper > #nav-user-name {
@@ -123,6 +131,7 @@ aside > .aside-container > .user-info-wrapper > #nav-user-name {
 }
 
 aside > .aside-container > ul {
+  margin-top: 20px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -131,6 +140,10 @@ aside > .aside-container > ul {
 
 aside > .aside-container > ul > li:hover {
   transform: translate(0, -1px);
+}
+
+aside > .aside-container > ul > li {
+  margin: 10px 0;
 }
 
 aside > .aside-container > ul > li > a {
@@ -146,11 +159,19 @@ aside > .aside-container > ul > li p {
 }
 
 aside > .aside-container > ul > li .menu-icon {
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   margin-right: 10px;
-  background-color: #bfbee4;
+  background-color: #615eff;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside > .aside-container > ul > li .menu-icon > img {
+  width: 27px;
+  height: 27px;
 }
 
 .main-section {

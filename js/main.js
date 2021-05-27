@@ -14,6 +14,10 @@ const changeIframe = (url) => {
   document.getElementById("major-iframe").src = url;
 };
 
+const changeProfile = (url) => {
+  document.getElementById("user-profile").src = url;
+};
+
 const getUserInfo = () => {
   userNameValue = localStorage.getItem("omg-name");
   userMajorValue = localStorage.getItem("omg-major");
@@ -23,14 +27,19 @@ const getUserInfo = () => {
 
   if (userMajorValue === "개발자님") {
     changeIframe("./page/club/clubFrameDev.html");
+    changeProfile("./img/profile/profile_developer.svg");
   } else if (userMajorValue === "디자이너님") {
     changeIframe("./page/club/clubFrameDesigner.html");
+    changeProfile("./img/profile/profile_designer.svg");
   } else if (userMajorValue === "기획자님") {
     changeIframe("./page/club/clubFrameManager.html");
+    changeProfile("./img/profile/profile_planner.svg");
   } else if (userMajorValue === "PD님") {
     changeIframe("./page/club/clubFramePd.html");
+    changeProfile("./img/profile/profile_broadcast.svg");
   } else {
     changeIframe("./page/club/clubFrameNormal.html");
+    changeProfile("./img/logo.svg");
   }
 };
 
