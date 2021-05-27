@@ -63,7 +63,7 @@ body .background {
   text-align: center;
 }
 
-.input-name:focus:focus {
+.input-name:focus {
   border-color: rgba(86, 52, 211, 0.945);
 }
 
