@@ -4,7 +4,11 @@
   margin-left: 30px;
 }
 
-.device-section > .device-button-container > button {
+.device-section iframe {
+  margin: 10px;
+}
+
+.device-section > .device-button-container button {
   background-color: white;
   text-decoration: none;
   font-size: 1rem;
@@ -20,29 +24,29 @@
   cursor: pointer;
 }
 
-.device-section > .device-button-container > button:hover {
+.device-section > .device-button-container button:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(37, 37, 37, 0.205);
 }
 
-.device-section > .device-button-container > button:active {
+.device-section > .device-button-container button:active {
   box-shadow: none;
   transform: scale(0.99);
   transform: translate(0, 0px);
 }
 
-.device-section > .device-button-container > button > div {
+.device-section > .device-button-container button > div {
   opacity: 0.5;
   height: 105px;
   padding-top: 10px;
   margin-top: 10px;
 }
-.device-section > .device-button-container > button > div:hover {
+.device-section > .device-button-container button > div:hover {
   opacity: 1;
 }
 
 /*버튼 1_노트북*/
-.device-section > .device-button-container > .device-button-item1 > div {
+.device-section > .device-button-container .device-button-item1 > div {
   background: url("../../../img/button/btnimg_device_laptop.svg");
   background-repeat: no-repeat;
   background-position: 50% 10%;
@@ -50,7 +54,7 @@
 }
 
 /*버튼 2_태블릿*/
-.device-section > .device-button-container > .device-button-item2 > div {
+.device-section > .device-button-container .device-button-item2 > div {
   background: url("../../../img/button/btnimg_device_tablet.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;
@@ -58,7 +62,7 @@
 }
 
 /*버튼 3_카메라*/
-.device-section > .device-button-container > .device-button-item3 > div {
+.device-section > .device-button-container .device-button-item3 > div {
   background: url("../../../img/button/btnimg_device_camera.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;

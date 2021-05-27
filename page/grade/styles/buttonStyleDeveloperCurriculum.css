@@ -4,7 +4,11 @@
   margin-left: 30px;
 }
 
-.grade-section > .grade-button-container > button {
+.grade-section iframe {
+  margin: 10px;
+}
+
+.grade-section > .grade-button-container button {
   background-color: white;
   text-decoration: none;
   font-size: 1rem;
@@ -20,29 +24,29 @@
   cursor: pointer;
 }
 
-.grade-section > .grade-button-container > button:hover {
+.grade-section > .grade-button-container button:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(37, 37, 37, 0.205);
 }
 
-.grade-section > .grade-button-container > button:active {
+.grade-section > .grade-button-container button:active {
   box-shadow: none;
   transform: scale(0.99);
   transform: translate(0, 0px);
 }
 
-.grade-section > .grade-button-container > button > div {
+.grade-section > .grade-button-container button > div {
   opacity: 0.5;
   height: 105px;
   padding-top: 10px;
   margin-top: 10px;
 }
-.grade-section > .grade-button-container > button > div:hover {
+.grade-section > .grade-button-container button > div:hover {
   opacity: 1;
 }
 
 /*버튼 1_학부 소모임*/
-.grade-section > .grade-button-container > .grade-button-item1 > div {
+.grade-section > .grade-button-container .grade-button-item1 > div {
   background: url("../../../img/button/btnimg_curriculum_1.svg");
   background-repeat: no-repeat;
   background-position: 50% 10%;
@@ -50,7 +54,7 @@
 }
 
 /*버튼 2_중앙동아리*/
-.grade-section > .grade-button-container > .grade-button-item2 > div {
+.grade-section > .grade-button-container .grade-button-item2 > div {
   background: url("../../../img/button/btnimg_curriculum_2.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;
@@ -58,7 +62,7 @@
 }
 
 /*버튼 3_연합동아리*/
-.grade-section > .grade-button-container > .grade-button-item3 > div {
+.grade-section > .grade-button-container .grade-button-item3 > div {
   background: url("../../../img/button/btnimg_curriculum_3.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;
@@ -66,7 +70,7 @@
 }
 
 /*버튼 4_교외모임*/
-.grade-section > .grade-button-container > .grade-button-item4 > div {
+.grade-section > .grade-button-container .grade-button-item4 > div {
   background: url("../../../img/button/btnimg_curriculum_4.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;

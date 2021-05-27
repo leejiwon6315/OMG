@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+}
+
+.detail > a > img {
+  margin: 10px;
+  width: 30%;
+  height: 30%;
+  float: left;
+  padding-right: 15px;
+}
+
+.club {
+  width: 60%;
+  display: inline-block;
+}

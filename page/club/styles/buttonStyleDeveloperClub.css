@@ -4,7 +4,15 @@
   margin-left: 30px;
 }
 
-.club-section > .club-button-container > button {
+.club-section iframe {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.club-section > .club-button-container button {
   background-color: white;
   text-decoration: none;
   font-size: 1rem;
@@ -20,29 +28,29 @@
   cursor: pointer;
 }
 
-.club-section > .club-button-container > button:hover {
+.club-section > .club-button-container button:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(37, 37, 37, 0.205);
 }
 
-.club-section > .club-button-container > button:active {
+.club-section > .club-button-container button:active {
   box-shadow: none;
   transform: scale(0.99);
   transform: translate(0, 0px);
 }
 
-.club-section > .club-button-container > button > div {
+.club-section > .club-button-container button > div {
   opacity: 0.5;
   height: 105px;
   padding-top: 10px;
   margin-top: 10px;
 }
-.club-section > .club-button-container > button > div:hover {
+.club-section > .club-button-container button > div:hover {
   opacity: 1;
 }
 
 /*버튼 1_학부 소모임*/
-.club-section > .club-button-container > .club-button-item1 > div {
+.club-section > .club-button-container .club-button-item1 > div {
   background: url("../../../img/button/btnimg_club_smallgroup.svg");
   background-repeat: no-repeat;
   background-position: 50% 10%;
@@ -50,7 +58,7 @@
 }
 
 /*버튼 2_중앙동아리*/
-.club-section > .club-button-container > .club-button-item2 > div {
+.club-section > .club-button-container .club-button-item2 > div {
   background: url("../../../img/button/btnimg_club_centergroup.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;
@@ -58,7 +66,7 @@
 }
 
 /*버튼 3_연합동아리*/
-.club-section > .club-button-container > .club-button-item3 > div {
+.club-section > .club-button-container .club-button-item3 > div {
   background: url("../../../img/button/btnimg_club_uniongroup.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;
@@ -66,7 +74,7 @@
 }
 
 /*버튼 4_교외모임*/
-.club-section > .club-button-container > .club-button-item4 > div {
+.club-section > .club-button-container .club-button-item4 > div {
   background: url("../../../img/button/btnimg_club_outgroup.svg");
   background-repeat: no-repeat;
   background-position: 52% 10%;

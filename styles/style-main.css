@@ -141,11 +141,11 @@ aside > .aside-container > ul > li > a {
   cursor: pointer;
 }
 
-aside > .aside-container > ul > li > a > p {
+aside > .aside-container > ul > li p {
   font-size: 16px;
 }
 
-aside > .aside-container > ul > li > a > .menu-icon {
+aside > .aside-container > ul > li .menu-icon {
   width: 30px;
   height: 30px;
   margin-right: 10px;
